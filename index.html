@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kruskal's Algorithm</title>
+</head>
+<body>
+    <script src = "main.js"></script>
+    <script>
+        //Create and initialise the canvas.
+        var canvas = document.createElement('canvas');
+        canvas.width = 1920;
+        canvas.height = 1080;
+        document.body.appendChild(canvas);
+    </script>
+    <script>
+        var game = new kruskal();
+        game.initkruskal(40, canvas);
+        game.render(canvas.getContext('2d'));
+
+    </script>
+</body>
+</html>
